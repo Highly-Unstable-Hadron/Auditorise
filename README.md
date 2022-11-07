@@ -35,7 +35,7 @@ To add support for a new system, all that is required is to:
 2. Wait for the stack of punch-cards containing the compiler and this code to arrive by 
    multiple couriers
 3. Buy a card-sorting machine to arrange all the punch cards in the right order
-4. Compile [`auditorise-core.cob`](.\backwards-compatible\auditorise-core.cob)
+4. Compile [`auditorise-core.cob`](backwards-compatible/auditorise-core.cob)
 5. Sleep for the night and return next morning to find that the compiler is still running
 6. Consult your school / college counsellor for moral and emotional support
 7. And then, write a frontend for the application, with the language / framework of _**your**_
@@ -44,7 +44,7 @@ To add support for a new system, all that is required is to:
 In case a frontend does not exist for your system, no problem! You can still run it from the 
 command-line. You _only_ have to input RGB values for about 65536 (256 * 256) pixels.
 
-Also, the compiled executable must be in [`backwards-compatible/bin/`](.\backwards-compatible\bin)
+Also, the compiled executable must be in [`backwards-compatible/bin/`](backwards-compatible/bin)
 
 
 ### About the app
@@ -68,9 +68,9 @@ Keybinds for the app:
 - `Alt + q`: Quit
 
 The **_COBOL_** backend converts a `(65536, 3)` _numpy_ array (reshaped from `(256, 256, 3)`) passed 
-as input in [`backwards-compatible/__inout__/in.txt`](.\backwards-compatible\\__inout__\in.txt) into 
+as input in [`backwards-compatible/__inout__/in.txt`](backwards-compatible/__inout__/in.txt) into 
 audio and then writes it into 
-[`backwards-compatible/__inout__/out.txt`](.\backwards-compatible\\__inout__\out.txt).
+[`backwards-compatible/__inout__/out.txt`](backwards-compatible/__inout__/out.txt).
 It uses a [Hilbert curve](https://en.wikipedia.org/wiki/Hilbert_curve) _(a space-filling curve which 
 preserves locality quite well)_ to map a 2-dimensional image into a 1-dimensional space (audio).
 
@@ -109,10 +109,10 @@ The following packages were used:
 I have also taken utmost care and forethought in the matter of 
 forwards-compatibility _(the opposite of backwards-compatibility)_.
 Therefore, I have included a forwards-compatible version in 
-[`forwards-compatible/`](.\forwards-compatible). 
+[`forwards-compatible/`](forwards-compatible). 
 
 It contains a **_PDF_** showing the format of a legal 
-["cease-and-desist" letter](.\forwards-compatible\General-Cease-and-Desist-Letter-Template.pdf),
+["cease-and-desist" letter](forwards-compatible/General-Cease-and-Desist-Letter-Template.pdf),
 to allow for future mega-corporations to easily sue independent developers like me, and then 
 take credit for our work. 
 
@@ -126,7 +126,7 @@ _(This **PDF** was taken from
 This app has only been tested, and built, on Windows.
 
 The frontend for this app is written in Python 3. The dependencies are given in 
-[`requirements.txt`](.\backwards-compatible\requirements.txt): 
+[`requirements.txt`](backwards-compatible/requirements.txt): 
 ```commandline
 cffi==1.15.0
 numpy==1.23.4
@@ -155,12 +155,12 @@ it in the **_About Page_**:
 ```commandline
 pandoc -s README.md -o .\backwards-compatible\__assets__\converted-README.html
 ```
-You can view the HTML file [here](.\backwards-compatible\\__assets__\converted-README.html).
+You can view the HTML file [here](backwards-compatible/__assets__/converted-README.html).
 
-All other files in [`backwards-compatible/__assets__/`](.\backwards-compatible\\__assets__) are 
+All other files in [`backwards-compatible/__assets__/`](backwards-compatible/__assets__) are 
 original, and made with 
 [**_(MS)_** Paint v11.2208.6.0](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H) _(Windows 11 version)_.
 
 The **PDF** in 
-[`forwards-compatible/`](.\forwards-compatible\General-Cease-and-Desist-Letter-Template.pdf) was
+[`forwards-compatible/`](forwards-compatible/General-Cease-and-Desist-Letter-Template.pdf) was
 taken from [_eForms.com_](https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf).
