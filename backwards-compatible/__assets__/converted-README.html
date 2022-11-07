@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #ffffff;
+      background-color: #000000;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #ff0000;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<!--This file was made by pandoc and edited by me to get the appearance and links corrected-->
+<body>
+<h1 id="auditorise">Auditorise</h1>
+<p><em>(A submission for a Hackathon on the topic ‘Impractical
+Inventions’)</em></p>
+<p>It is a well-known fact that, today, the world faces a grave threat
+to its existence. We all have heard of this crisis at some point or
+another. It is said to have far-reaching implications for all of Earth
+and its most important fauna.</p>
+<p>It, of course, is increasing screentime.</p>
+<p>This app lets you strain your eyes lesser by converting images into
+audio. With <em><strong>a bit of</strong></em> practise, you can train
+yourself to <em>‘see’</em> sound.</p>
+<p>This can also be used by visually-disabled people to access their
+computers faster and more efficiently. The traditional (TTS) method is
+far too slow and many applications don’t support them fully. In
+contrast, a 256 by 256 RGB image can usually be played back as audio in
+under 3 seconds using <strong><em>Auditorise</em></strong> <em>(found in
+informal tests run on a Windows 11 system)</em>.</p>
+<p>The frontend of the app is written in Python and the backend is
+written in <strong><em>COBOL</em></strong>.</p>
+<h3 id="why-cobol">Why <em>COBOL</em>?</h3>
+<p>This application was made to be backwards-compatible with as many
+systems as possible, which is why the image-to-audio converter, was
+written in <strong><em>COBOL</em></strong>.</p>
+<p>This language was chosen because it, till today, retains support for
+programming on punched-cards. As you can expect from a programming
+language of the name <strong>COmmon Business-Oriented Language</strong>,
+it takes backwards-compatibility very seriously.</p>
+<p>To add support for a new system, all that is required is to:</p>
+<ol type="1">
+<li>Buy a <strong><em>COBOL</em></strong> compiler compatible with that
+system</li>
+<li>Wait for the stack of punch-cards containing the compiler and this
+code to arrive by multiple couriers</li>
+<li>Buy a card-sorting machine to arrange all the punch cards in the
+right order</li>
+<li>Compile <a
+href="..\backwards-compatible\auditorise-core.cob"><code>auditorise-core.cob</code></a></li>
+<li>Sleep for the night and return next morning to find that the
+compiler is still running</li>
+<li>Consult your school / college counsellor for moral and emotional
+support</li>
+<li>And then, write a frontend for the application, with the language /
+framework of <em><strong>your</strong></em> choice!</li>
+</ol>
+<p>In case a frontend does not exist for your system, no problem! You
+can still run it from the command-line. You <em>only</em> have to input
+RGB values for about 65536 (256 * 256) pixels.</p>
+<p>Also, the compiled executable must be in <a
+href="..\backwards-compatible\bin"><code>backwards-compatible/bin/</code></a></p>
+<h3 id="about-the-app">About the app</h3>
+<p>The app has 4 pages:</p>
+<ul>
+<li><strong><em>About Page</em></strong>: This file is displayed</li>
+<li><strong><em>From-Camera Page</em></strong>: Captures an image from
+your camera and converts it to audio</li>
+<li><strong><em>From-Screen Page</em></strong>: Takes a screenshot and
+converts it to audio</li>
+<li><strong><em>From-Files Page</em></strong>: Convert images
+(<em>PNG</em>, <em>JPG</em>, <em>JPEG</em> images) from your system into
+audio</li>
+</ul>
+<p>Keybinds for the app:</p>
+<ul>
+<li><code>Alt + a</code>: Opens <strong><em>About
+Page</em></strong></li>
+<li><code>Alt + c</code>: Opens <strong><em>From-Camera
+Page</em></strong>
+<ul>
+<li><code>Alt + space</code>: Captures image</li>
+</ul></li>
+<li><code>Alt + s</code>: Opens <strong><em>From-Screen
+Page</em></strong>
+<ul>
+<li><code>Alt + space</code>: Captures image</li>
+</ul></li>
+<li><code>Alt + f</code>: Opens <strong><em>From-Files
+Page</em></strong></li>
+<li><code>Alt + p</code>: Play / Pause</li>
+<li><code>Alt + q</code>: Quit</li>
+</ul>
+<p>The <strong><em>COBOL</em></strong> backend converts a
+<code>(65536, 3)</code> <em>numpy</em> array (reshaped from
+<code>(256, 256, 3)</code>) passed as input in <a
+href="..\backwards-compatible\__inout__\in.txt"><code>backwards-compatible/__inout__/in.txt</code></a>
+into audio and then writes it into <a
+href="..\backwards-compatible\__inout__\out.txt"><code>backwards-compatible/__inout__/out.txt</code></a>.
+It uses a <a href="https://en.wikipedia.org/wiki/Hilbert_curve">Hilbert
+curve</a> <em>(a space-filling curve which preserves locality quite
+well)</em> to map a 2-dimensional image into a 1-dimensional space
+(audio).</p>
+<p>After that, the <strong><em>COBOL</em></strong> program maps the
+colour value of each pixel to audio.</p>
+<p>Because it is hard for a human to learn to distinguish all 256 values
+of each colour, it has been divided into 8 bands instead (each spanning
+a range of 32), which was then written into the output audio.</p>
+<p>The mapping is:</p>
+<ul>
+<li><code>RED</code> to amplitude of the output audio
+<ul>
+<li>0 - 8 units of amplitude</li>
+<li>0 - 4 units below 0, rest above</li>
+</ul></li>
+<li><code>GREEN</code> to some kind of <a
+href="https://en.wikipedia.org/wiki/Timbre"><em>timbre</em></a>, in the
+output audio
+<ul>
+<li>0 - 8 units</li>
+<li>1 unit = 1 / 4 of the total amplitude</li>
+</ul></li>
+<li><code>BLUE</code> to wavelength of the output audio
+<ul>
+<li>1 - 8 units of time added</li>
+</ul></li>
+</ul>
+<p>The app resizes all input images to size <code>(256, 256)</code>, as
+Hilbert curves are easiest to implement on squares.</p>
+<p>The app uses the <code>tkinter</code> standard library module for its
+frontend.</p>
+<p>The following packages were used: - <code>pillow</code> to read
+images from file and manipulate them - <code>ttkthemes</code> for the UI
+- <code>opencv-python</code> to get input images -
+<code>sounddevice</code> to play the audio - <code>numpy</code> to
+manipulate the input image and output audio arrays -
+<code>tkinterweb</code> to render this MarkDown file, converted to
+<strong>HTML</strong>, inside the app</p>
+<h3 id="forwards-compatibility">Forwards-compatibility</h3>
+<p>I have also taken utmost care and forethought in the matter of
+forwards-compatibility <em>(the opposite of
+backwards-compatibility)</em>. Therefore, I have included a
+forwards-compatible version in <a
+href="..\forwards-compatible"><code>forwards-compatible/</code></a>.</p>
+<p>It contains a <strong><em>PDF</em></strong> showing the format of a
+legal <a
+href="..\forwards-compatible\General-Cease-and-Desist-Letter-Template.pdf">“cease-and-desist”
+letter</a>, to allow for future mega-corporations to easily sue
+independent developers like me, and then take credit for our work.</p>
+<p>As you can clearly see, I have given a lot of thought into this
+matter.</p>
+<p><em>(This <strong>PDF</strong> was taken from <a
+href="https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf">eForms.com</a>.)</em></p>
+<h3 id="sources-building-from-source">Sources &amp; Building from
+source</h3>
+<p>This app has only been tested on Windows.</p>
+<p>The frontend for this app is written in Python 3. The dependencies
+are given in <a
+href="..\backwards-compatible\requirements.txt"><code>requirements.txt</code></a>:</p>
+<pre class="commandline"><code>cffi==1.15.0
+numpy==1.23.4
+opencv-python==4.6.0.66
+Pillow==9.3.0
+pycparser==2.21
+sounddevice==0.4.5
+tkinterweb==3.15.6
+ttkthemes==3.2.2</code></pre>
+<p>You can install them by running:</p>
+<pre class="commandline"><code>pip install -r backwards-compatible\requirements.txt</code></pre>
+<p><a href="https://sourceforge.net/projects/gnucobol/">GNUCobol
+v2.0.0</a> with <a
+href="https://pypi.org/project/OpenCobolIDE/">OpenCobolIDE v4.7.6</a>
+was used to compile the <em><em>COBOL</em></em> code. This was the
+command used by the IDE (run over a <em>POSIX</em> compatibility
+layer):</p>
+<pre class="commandline"><code>cobc.exe -x -o bin\auditorise-core.exe -std=default -x auditorise-core.cob</code></pre>
+<p><a href="https://pandoc.org/index.html">pandoc</a> was used to
+convert this MarkDown file into HTML, to display it in the
+<strong><em>About Page</em></strong>:</p>
+<pre class="commandline"><code>pandoc -s README.md -o .\backwards-compatible\__assets__\converted-README.html</code></pre>
+<p>You can view the HTML file <a
+href="..\backwards-compatible\__assets__\converted-README.html">here</a>.</p>
+<p>All other files in <a
+href="..\backwards-compatible\__assets__"><code>backwards-compatible/__assets__/</code></a>
+are original, and made with <a
+href="https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H"><strong><em>(MS)</em></strong>
+Paint v11.2208.6.0</a> <em>(Windows 11 version)</em>.</p>
+<p>The <strong>PDF</strong> in <a
+href="..\forwards-compatible\General-Cease-and-Desist-Letter-Template.pdf"><code>forwards-compatible/</code></a>
+was taken from <a
+href="https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf"><em>eForms.com</em></a>.</p>
+</body>
+</html>
