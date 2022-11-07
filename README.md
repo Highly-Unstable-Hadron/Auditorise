@@ -19,6 +19,8 @@ them fully. In contrast, a 256 by 256 RGB image can usually be played back as au
 
 The frontend of the app is written in Python and the backend is written in **_COBOL_**.
 
+You can run this app by downloading the linked release.
+
 ### Why _COBOL_?
 
 This application was made to be backwards-compatible with as many systems as possible, which 
@@ -122,6 +124,8 @@ _(This **PDF** was taken from
 [eForms.com](https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf).)_
 
 ### Sources & Building from source
+
+This app is inspired by _3Blue1Brown_'s video linked [here](https://www.3blue1brown.com/lessons/hilbert-curve).
 
 This app has only been tested, and built, on Windows.
 
