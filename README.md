@@ -104,7 +104,7 @@ The following packages were used:
 - `opencv-python` to get input images
 - `sounddevice` to play the audio
 - `numpy` to manipulate the input image and output audio arrays
-- `tkinterweb` to render this MarkDown file, converted to **HTML**, inside the app
+- `tkinterweb` to render this _MarkDown file_, converted to **HTML**, inside the app
 
 ### Forwards-compatibility
 
@@ -123,11 +123,29 @@ As you can clearly see, I have given a lot of thought into this matter.
 _(This **PDF** was taken from 
 [eForms.com](https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf).)_
 
+### Running the app
+
+Install the [_Python_ 3 interpreter](https://www.python.org/downloads/), if it isn't already present.
+
+Download the latest release from the 
+[GitHub repository](https://github.com/Highly-Unstable-Hadron/Auditorise) 
+of this project, and unzip the folder.
+
+Run the following command inside the parent directory to install all the dependencies:
+```commandline
+pip install -r backwards-compatible\requirements.txt
+```
+
+Finally, go to [`backwards-compatible/`](backwards-compatible) and run 
+[`main.py`](backwards-compatible/main.py).
+
 ### Sources & Building from source
 
-This app is inspired by _3Blue1Brown_'s video linked [here](https://www.3blue1brown.com/lessons/hilbert-curve).
+This app is inspired by _3Blue1Brown_'s video linked 
+[here](https://www.3blue1brown.com/lessons/hilbert-curve).
 
-This app has only been tested, and built, on Windows.
+This app has only been tested, and built, on Windows. And it has only been run and tested in 
+_Python 3.10_.
 
 The frontend for this app is written in Python 3. The dependencies are given in 
 [`requirements.txt`](backwards-compatible/requirements.txt): 
@@ -153,18 +171,22 @@ This was the command used by the IDE (run over a _POSIX_ compatibility layer):
 ```commandline
 cobc.exe -x -o bin\auditorise-core.exe -std=default -x auditorise-core.cob
 ```
+The easiest way to compile the code on Windows is by installing the IDE.
 
-[pandoc](https://pandoc.org/index.html) was used to convert this MarkDown file into HTML, to display
-it in the **_About Page_**:
+[pandoc](https://pandoc.org/index.html) was used to convert this MarkDown file into **HTML**, to 
+display it in the **_About Page_**:
 ```commandline
 pandoc -s README.md -o .\backwards-compatible\__assets__\converted-README.html
 ```
-You can view the HTML file [here](backwards-compatible/__assets__/converted-README.html).
+You can view the converted **HTML** file [here](backwards-compatible/__assets__/converted-README.html) 
+_(the links on the page probably won't work if you view it from the browser)_.
 
 All other files in [`backwards-compatible/__assets__/`](backwards-compatible/__assets__) are 
 original, and made with 
-[**_(MS)_** Paint v11.2208.6.0](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H) _(Windows 11 version)_.
+[**_(MS)_** Paint v11.2208.6.0](https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H) 
+_(Windows 11 version)_.
 
 The **PDF** in 
 [`forwards-compatible/`](forwards-compatible/General-Cease-and-Desist-Letter-Template.pdf) was
-taken from [_eForms.com_](https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf).
+taken from 
+[_eForms.com_](https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf).
