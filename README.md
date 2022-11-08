@@ -137,7 +137,7 @@ pip install -r backwards-compatible\requirements.txt
 ```
 
 Finally, go to [`backwards-compatible/`](backwards-compatible) and run 
-[`main.py`](backwards-compatible/main.py).
+[`main.py`](backwards-compatible/main.py) from the terminal.
 
 ### Sources & Building from source
 
