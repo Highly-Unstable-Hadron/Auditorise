@@ -157,10 +157,9 @@
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
   <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"..\script>
   <![endif]-->
 </head>
-<!--This file was made by pandoc and edited by me to get the appearance and links corrected-->
 <body>
 <h1 id="auditorise">Auditorise</h1>
 <p><em>(A submission for a Hackathon on the topic ‘Impractical
@@ -181,6 +180,7 @@ under 3 seconds using <strong><em>Auditorise</em></strong> <em>(found in
 informal tests run on a Windows 11 system)</em>.</p>
 <p>The frontend of the app is written in Python and the backend is
 written in <strong><em>COBOL</em></strong>.</p>
+<p>You can run this app by downloading the linked release.</p>
 <h3 id="why-cobol">Why <em>COBOL</em>?</h3>
 <p>This application was made to be backwards-compatible with as many
 systems as possible, which is why the image-to-audio converter, was
@@ -198,7 +198,7 @@ code to arrive by multiple couriers</li>
 <li>Buy a card-sorting machine to arrange all the punch cards in the
 right order</li>
 <li>Compile <a
-href="..\backwards-compatible\auditorise-core.cob"><code>auditorise-core.cob</code></a></li>
+href="..\backwards-compatible/auditorise-core.cob"><code>auditorise-core.cob</code></a></li>
 <li>Sleep for the night and return next morning to find that the
 compiler is still running</li>
 <li>Consult your school / college counsellor for moral and emotional
@@ -210,7 +210,7 @@ framework of <em><strong>your</strong></em> choice!</li>
 can still run it from the command-line. You <em>only</em> have to input
 RGB values for about 65536 (256 * 256) pixels.</p>
 <p>Also, the compiled executable must be in <a
-href="..\backwards-compatible\bin"><code>backwards-compatible/bin/</code></a></p>
+href="..\backwards-compatible/bin"><code>backwards-compatible/bin/</code></a></p>
 <h3 id="about-the-app">About the app</h3>
 <p>The app has 4 pages:</p>
 <ul>
@@ -245,9 +245,9 @@ Page</em></strong></li>
 <p>The <strong><em>COBOL</em></strong> backend converts a
 <code>(65536, 3)</code> <em>numpy</em> array (reshaped from
 <code>(256, 256, 3)</code>) passed as input in <a
-href="..\backwards-compatible\__inout__\in.txt"><code>backwards-compatible/__inout__/in.txt</code></a>
+href="..\backwards-compatible/__inout__/in.txt"><code>backwards-compatible/__inout__/in.txt</code></a>
 into audio and then writes it into <a
-href="..\backwards-compatible\__inout__\out.txt"><code>backwards-compatible/__inout__/out.txt</code></a>.
+href="..\backwards-compatible/__inout__/out.txt"><code>backwards-compatible/__inout__/out.txt</code></a>.
 It uses a <a href="https://en.wikipedia.org/wiki/Hilbert_curve">Hilbert
 curve</a> <em>(a space-filling curve which preserves locality quite
 well)</em> to map a 2-dimensional image into a 1-dimensional space
@@ -287,7 +287,7 @@ images from file and manipulate them - <code>ttkthemes</code> for the UI
 manipulate the input image and output audio arrays -
 <code>tkinterweb</code> to render this MarkDown file, converted to
 <strong>HTML</strong>, inside the app</p>
-<h3 id="forwards-compatibility">Forwards-compatibility</h3>
+<h3 id="..\forwards-compatibility">Forwards-compatibility</h3>
 <p>I have also taken utmost care and forethought in the matter of
 forwards-compatibility <em>(the opposite of
 backwards-compatibility)</em>. Therefore, I have included a
@@ -295,7 +295,7 @@ forwards-compatible version in <a
 href="..\forwards-compatible"><code>forwards-compatible/</code></a>.</p>
 <p>It contains a <strong><em>PDF</em></strong> showing the format of a
 legal <a
-href="..\forwards-compatible\General-Cease-and-Desist-Letter-Template.pdf">“cease-and-desist”
+href="..\forwards-compatible/General-Cease-and-Desist-Letter-Template.pdf">“cease-and-desist”
 letter</a>, to allow for future mega-corporations to easily sue
 independent developers like me, and then take credit for our work.</p>
 <p>As you can clearly see, I have given a lot of thought into this
@@ -304,10 +304,12 @@ matter.</p>
 href="https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf">eForms.com</a>.)</em></p>
 <h3 id="sources-building-from-source">Sources &amp; Building from
 source</h3>
-<p>This app has only been tested on Windows.</p>
+<p>This app is inspired by <em>3Blue1Brown</em>’s video linked <a
+href="https://www.3blue1brown.com/lessons/hilbert-curve">here</a>.</p>
+<p>This app has only been tested, and built, on Windows.</p>
 <p>The frontend for this app is written in Python 3. The dependencies
 are given in <a
-href="..\backwards-compatible\requirements.txt"><code>requirements.txt</code></a>:</p>
+href="..\backwards-compatible/requirements.txt"><code>requirements.txt</code></a>:</p>
 <pre class="commandline"><code>cffi==1.15.0
 numpy==1.23.4
 opencv-python==4.6.0.66
@@ -330,14 +332,14 @@ convert this MarkDown file into HTML, to display it in the
 <strong><em>About Page</em></strong>:</p>
 <pre class="commandline"><code>pandoc -s README.md -o .\backwards-compatible\__assets__\converted-README.html</code></pre>
 <p>You can view the HTML file <a
-href="..\backwards-compatible\__assets__\converted-README.html">here</a>.</p>
+href="..\backwards-compatible/__assets__/converted-README.html">here</a>.</p>
 <p>All other files in <a
-href="..\backwards-compatible\__assets__"><code>backwards-compatible/__assets__/</code></a>
+href="..\backwards-compatible/__assets__"><code>backwards-compatible/__assets__/</code></a>
 are original, and made with <a
 href="https://apps.microsoft.com/store/detail/paint/9PCFS5B6T72H"><strong><em>(MS)</em></strong>
 Paint v11.2208.6.0</a> <em>(Windows 11 version)</em>.</p>
 <p>The <strong>PDF</strong> in <a
-href="..\forwards-compatible\General-Cease-and-Desist-Letter-Template.pdf"><code>forwards-compatible/</code></a>
+href="..\forwards-compatible/General-Cease-and-Desist-Letter-Template.pdf"><code>forwards-compatible/</code></a>
 was taken from <a
 href="https://eforms.com/download/2018/01/General-Cease-and-Desist-Letter-Template.pdf"><em>eForms.com</em></a>.</p>
 </body>
